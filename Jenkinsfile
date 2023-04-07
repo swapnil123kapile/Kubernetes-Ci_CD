@@ -1,7 +1,7 @@
 node {
          stage("Git Clone"){
 
-         git credentialsId: 'Git-Hub-Credentials', url: "https://github.com/rupalikhare123/bentoml_ccfd.git"
+         git credentialsId: 'Git-Hub-Credentials', url: "https://github.com/RupaliKhare/bentoml_ccfd.git"
          
          stage("Docker build"){
              sh 'docker version'

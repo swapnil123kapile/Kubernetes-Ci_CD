@@ -34,8 +34,7 @@ spec:
                 app: xgb-classifier
         spec:
             containers:
-            - image: devbarahen61/xgb_classifier:latest
-              imagePullPolicy: IfNotPresent
+            - image: rupalikhare123/xgb_classifier:latest
               name: xgb-classifier
               ports:
               - containerPort: 3000

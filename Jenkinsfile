@@ -14,11 +14,11 @@ node {
          stage("Docker Login"){
                    
              withCredentials([string(credentialsId: 'rupalikhare123', variable: 'PASSWORD')]) {
-        	    sh "docker login -u devbarahen61 -p ${PASSWORD}"
+        	    sh "docker login -u rupalikhare123 -p ${PASSWORD}"
          }
          }
          stage("Push image to docker hub"){
-             sh 'docker push devbarahen61/xgb_classifier:latest'
+             sh 'docker push rupalikhare123/xgb_classifier:latest'
          }
 
          stage("Kubernetes deployment"){
